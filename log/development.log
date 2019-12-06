@@ -1,0 +1,1107 @@
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/dell/Documents/trailblazer/guides-operation-03/config/initializers/new_framework_defaults.rb:21)
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-05 11:59:44 +0200
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "blog_posts"[0m
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 88ms (Views: 2.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2019-12-05 11:59:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/dell/Documents/trailblazer/guides-operation-03/config/initializers/new_framework_defaults.rb:21)
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-05 18:37:44 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for BlogPostsController):
+  
+actionpack (5.1.0) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.0) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.0) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.0) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-05 18:37:46 +0200
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for BlogPostsController):
+  
+actionpack (5.1.0) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.0) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.0) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.0) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-05 18:38:16 +0200
+Processing by BlogPostsController#new as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant BlogPost::Create::Present5):
+  
+app/controllers/blog_posts_controller.rb:4:in `new'
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-05 18:38:44 +0200
+Processing by BlogPostsController#new as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NameError (uninitialized constant BlogPost::Create::Presenter):
+  
+app/controllers/blog_posts_controller.rb:4:in `new'
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-05 18:38:59 +0200
+Processing by BlogPostsController#new as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.3ms)
+
+
+  
+NameError (uninitialized constant BlogPost::Cell):
+  
+app/controllers/blog_posts_controller.rb:6:in `new'
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-05 18:39:55 +0200
+Processing by BlogPostsController#new as HTML
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 3.4ms)
+
+
+  
+Cell::TemplateMissingError (Template missing: view: `new.slim` prefixes: ["app/concepts/blog_post/view"]):
+  
+app/controllers/blog_posts_controller.rb:6:in `new'
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-05 18:40:08 +0200
+Processing by BlogPostsController#new as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+Cell::TemplateMissingError (Template missing: view: `new.slim` prefixes: ["app/concepts/blog_post/view"]):
+  
+app/controllers/blog_posts_controller.rb:6:in `new'
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-05 18:40:40 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 38ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-05 18:43:14 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eehz63rS6Ph8msG0wqKwtWIGOvotUbKCgj8EL1qHteZePv6bR2p31UYMBwTKg/ztEnsH6DVbC7PoAlNQTJGL9g==", "blog_post"=>{"title"=>"333", "body"=>"eewew"}, "commit"=>"Create Post"}
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 18:43:14 +0200
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for BlogPostsController):
+  
+actionpack (5.1.0) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.0) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.0) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.0) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:22:00 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.5ms)
+
+
+  
+LoadError (Unable to autoload constant BlogPost::Cell::Index, expected /home/dell/Documents/trailblazer/guides-operation-03/app/concepts/blog_post/cell/index.rb to define it):
+  
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:22:29 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (Unable to autoload constant BlogPost::Cell::Index, expected /home/dell/Documents/trailblazer/guides-operation-03/app/concepts/blog_post/cell/index.rb to define it):
+  
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:22:31 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (Unable to autoload constant BlogPost::Cell::Index, expected /home/dell/Documents/trailblazer/guides-operation-03/app/concepts/blog_post/cell/index.rb to define it):
+  
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:24:46 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.5ms)
+
+
+  
+Cell::TemplateMissingError (Template missing: view: `index.slim` prefixes: ["app/concepts/blog_post/view"]):
+  
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:26:25 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 11]]
+NameError (undefined local variable or method `total' for #<BlogPost::Cell::Index:0x0000562eaa93d8f0>):
+  
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_47379215044300'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:26:29 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE BlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 11]]
+NameError (undefined local variable or method `total' for #<BlogPost::Cell::Index:0x0000562eaa709fe8>):
+  
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_47379215044300'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:27:33 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 4.1ms)
+
+
+  
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 11]]
+NameError (undefined local variable or method `total' for #<BlogPost::Cell::Index:0x0000562eaa735800>):
+  
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102393110020'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:27:35 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 11]]
+NameError (undefined local variable or method `total' for #<BlogPost::Cell::Index:0x0000562ea971afb0>):
+  
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102393110020'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:30:17 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 2.1ms)
+
+
+  
+NoMethodError (undefined method `size' for nil:NilClass):
+  
+app/concepts/blog_post/cell/index.rb:4:in `total'
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102393048100'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:30:32 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `size' for nil:NilClass):
+  
+app/concepts/blog_post/cell/index.rb:4:in `total'
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102393048100'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:30:48 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.9ms)
+
+
+  
+NameError (uninitialized constant BlogPost::Cell::Item):
+  
+app/concepts/blog_post/view/index.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102393048100'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:32:59 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.9ms)
+
+
+  
+NameError (uninitialized constant BlogPost::Cell::Item):
+  
+app/concepts/blog_post/view/index.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102392186540'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts/1" for 127.0.0.1 at 2019-12-05 19:38:34 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.2ms)
+
+
+  
+NameError (uninitialized constant BlogPost::Cell::Show):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-05 19:38:43 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-05 19:38:49 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8ezINSKTB+MpOob/6A1hEhkXfn78vHAVeG/C73kRYXTWOkVFHyuYzhOsQE/gLC1KaWpDbOS2ySQSUpWQbwdfZA==", "blog_post"=>{"title"=>"333", "body"=>"eewew"}, "commit"=>"Create Post"}
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-05 19:38:53 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zHi3q62IrhcHauDc8h5zsihfOonlOnZy2MtQvItkqcjrrjrbkDAxOj38Jmz6Pz/qWCIHm/0wz0Oy9gfDnXKX2A==", "blog_post"=>{"title"=>"333", "body"=>"eewew33333"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "333"], ["body", "eewew33333"], ["created_at", "2019-12-05 17:38:53.982395"], ["updated_at", "2019-12-05 17:38:53.982395"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+New blog post 333
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 9ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:38:54 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant BlogPost::Cell::Item):
+  
+app/concepts/blog_post/view/index.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102393270040'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:42:19 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+LoadError (Unable to autoload constant BlogPost::Cell::Item, expected /home/dell/Documents/trailblazer/guides-operation-03/app/concepts/blog_post/cell/item.rb to define it):
+  
+app/concepts/blog_post/view/index.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102391049460'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:42:43 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.0ms)
+
+
+  
+Cell::TemplateMissingError (Template missing: view: `item.slim` prefixes: ["app/concepts/blog_post/view"]):
+  
+app/concepts/blog_post/view/index.slim:3:in `join'
+app/concepts/blog_post/view/index.slim:3:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102391049460'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:42:47 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+Cell::TemplateMissingError (Template missing: view: `item.slim` prefixes: ["app/concepts/blog_post/view"]):
+  
+app/concepts/blog_post/view/index.slim:3:in `join'
+app/concepts/blog_post/view/index.slim:3:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102391049460'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:43:54 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `size' for nil:NilClass):
+  
+app/concepts/blog_post/cell/index.rb:4:in `total'
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102390631200'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:43:59 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `size' for nil:NilClass):
+  
+app/concepts/blog_post/cell/index.rb:4:in `total'
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102390631200'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:44:15 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.1ms)
+
+
+  
+NoMethodError (undefined method `title' for {:collection=>nil}:Hash):
+  
+app/concepts/blog_post/cell/item.rb:4:in `title'
+app/concepts/blog_post/view/item.slim:3:in `block in singleton class'
+app/concepts/blog_post/view/item.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/item.slim:-2:in `singleton class'
+app/concepts/blog_post/view/item.slim:-4:in `__tilt_70102390631200'
+app/concepts/blog_post/view/index.slim:3:in `join'
+app/concepts/blog_post/view/index.slim:3:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102390631200'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts/1" for 127.0.0.1 at 2019-12-05 19:44:29 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.7ms)
+
+
+  
+NameError (uninitialized constant BlogPost::Cell::Show):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/1" for 127.0.0.1 at 2019-12-05 19:47:04 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (uninitialized constant BlogPost::Cell::Show):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:47:08 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `size' for nil:NilClass):
+  
+app/concepts/blog_post/cell/index.rb:4:in `total'
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102392428840'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:52:03 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `size' for nil:NilClass):
+  
+app/concepts/blog_post/cell/index.rb:4:in `total'
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102392841340'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 19:59:38 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `size' for nil:NilClass):
+  
+app/concepts/blog_post/cell/index.rb:4:in `total'
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_47379214920120'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-05 20:04:01 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 20ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-05 20:04:06 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+ODTZV7pjM3ZQEt4sEpJ9rg3H+iO+MVlUJN2fx2t2a/fNl4VY1ET4OPWjci4awWuyEoi+pbyfFQ6riEAC7vnvw==", "blog_post"=>{"title"=>"333", "body"=>"eewew33333"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "333"], ["body", "eewew33333"], ["created_at", "2019-12-05 18:04:06.644790"], ["updated_at", "2019-12-05 18:04:06.644790"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+New blog post 333
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 17ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-05 20:04:06 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  
+app/concepts/blog_post/cell/index.rb:6:in `total'
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102390427820'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-06 07:57:02 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 15ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-06 07:57:14 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P/55WTMoQiuo5QLh6Ve7zeu+3NYB7VfYwJfOfVjhA8IYKPQpDpDdBpJzxFHhdveVm8PhxBnn7umqqpkCTvc90g==", "blog_post"=>{"title"=>"kjkjk", "body"=>"l;;';"}, "commit"=>"Create Post"}
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 16ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-06 07:57:30 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7T2FoMQDYA8LTJkCHQpAItjrWSTPDZXVtwylVqB4pN/K6wjQ+bv/IjHaX7IVKwx6qJZkNtcHLOTdMfIptm6azw==", "blog_post"=>{"title"=>"kjkjk", "body"=>"999999l;;';"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "kjkjk"], ["body", "999999l;;';"], ["created_at", "2019-12-06 05:57:30.852512"], ["updated_at", "2019-12-06 05:57:30.852512"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+New blog post kjkjk
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 16ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-06 07:57:30 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  
+app/concepts/blog_post/cell/index.rb:6:in `total'
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_47379214780820'
+app/controllers/blog_posts_controller.rb:23:in `index'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/dell/Documents/trailblazer/guides-operation-03/config/initializers/new_framework_defaults.rb:21)
+  [1m[36mBlogPost Load (1.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-06 08:31:21 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  
+app/concepts/blog_post/cell/index.rb:6:in `total'
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102389951080'
+app/controllers/blog_posts_controller.rb:23:in `index'
+Started GET "/blog_posts/1" for 127.0.0.1 at 2019-12-06 08:31:27 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (uninitialized constant BlogPost::Cell::Show):
+  
+app/controllers/blog_posts_controller.rb:29:in `show'
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-06 08:37:30 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  
+app/concepts/blog_post/cell/index.rb:6:in `total'
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102390957020'
+app/controllers/blog_posts_controller.rb:23:in `index'
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-06 09:48:53 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  
+app/concepts/blog_post/cell/index.rb:6:in `total'
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_47379214415660'
+app/controllers/blog_posts_controller.rb:23:in `index'
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-06 09:48:56 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  
+app/concepts/blog_post/cell/index.rb:6:in `total'
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_47379214415660'
+app/controllers/blog_posts_controller.rb:23:in `index'
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-06 09:50:11 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "blog_posts" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 79ms (Views: 0.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-06 09:58:30 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+NameError (uninitialized constant BlogPost::Cell::Show):
+  
+app/controllers/blog_posts_controller.rb:29:in `show'
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-06 10:09:01 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blog_posts" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC[0m
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 2.1ms)
+
+
+  
+NameError (undefined local variable or method `body' for #<BlogPost::Cell::Item:0x00007f83f876f808>):
+  
+app/concepts/blog_post/view/item.slim:7:in `block in singleton class'
+app/concepts/blog_post/view/item.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/item.slim:-2:in `singleton class'
+app/concepts/blog_post/view/item.slim:-4:in `__tilt_70102391667880'
+app/concepts/blog_post/view/index.slim:3:in `join'
+app/concepts/blog_post/view/index.slim:3:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70102391667880'
+app/controllers/blog_posts_controller.rb:23:in `index'
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-06 10:10:16 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blog_posts" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 42ms (Views: 1.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-06 10:13:14 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 15ms (Views: 0.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-06 10:13:17 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-06 10:13:20 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-06 10:13:23 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-06 10:14:59 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-06 10:15:03 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-06 10:16:57 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "blog_posts" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 28ms (Views: 0.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-06 10:17:13 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blog_posts" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-06 10:17:16 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-06 10:17:19 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-06 10:24:41 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/dell/Documents/trailblazer/guides-operation-03/config/initializers/new_framework_defaults.rb:21)
+Started GET "/favicon.ico" for 127.0.0.1 at 2019-12-06 10:30:07 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-06 10:32:15 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 32ms (Views: 1.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-06 10:33:54 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-06 10:33:59 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 39ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-06 10:34:12 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZNZ1NUq7CgF7/BOshrpJt879z95C6iga4uc9NDT8NH1DAPhFdwOVLEFq1RyOmwXvvoDyzFrgkSuI2mpLIuoKbQ==", "blog_post"=>{"title"=>"333", "body"=>"eewew"}, "commit"=>"Create Post"}
+  Rendering html template
+  Rendered html template (0.2ms)
+Completed 200 OK in 33ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-06 10:34:17 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xoFR+KrJfz+7eFhPjoUuiZxfvsYQJi1xr6vYT8ZVLi7hV9yIl3HgEoHunv+GpGLR7CKD1AgslEDFlo8w0EMQPg==", "blog_post"=>{"title"=>"333", "body"=>"eewew5555555"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "333"], ["body", "eewew5555555"], ["created_at", "2019-12-06 08:34:17.567346"], ["updated_at", "2019-12-06 08:34:17.567346"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+New blog post 333
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 18ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-06 10:34:17 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blog_posts" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 35ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/6" for 127.0.0.1 at 2019-12-06 10:34:20 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 14ms (Views: 6.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/6" for 127.0.0.1 at 2019-12-06 10:34:42 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 17ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/dell/Documents/trailblazer/guides-operation-03/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBlogPosts (20170503061229)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "blog_posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" varchar, "author" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170503061229"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-12-06 08:39:44.035997"], ["updated_at", "2019-12-06 08:39:44.035997"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-06 10:39:50 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gen204?invalidResponse=q=https%3A%2F%2Ftranslate.googleapis.com%2Ftranslate_a%2Fsingle%3Fclient%3Dgtx%26s,ql=140,r=,rl=0" for 127.0.0.1 at 2019-12-06 10:40:03 +0200
+Started GET "/gen204?invalidResponse=q=https%3A%2F%2Ftranslate.googleapis.com%2Ftranslate_a%2Fsingle%3Fclient%3Dgtx%26s,ql=145,r=,rl=0" for 127.0.0.1 at 2019-12-06 10:40:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/gen204"):
+  
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+ActionController::RoutingError (No route matches [GET] "/gen204"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-06 10:40:43 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC[0m
+  Rendering html template
+  Rendered html template (0.2ms)
+Completed 200 OK in 17ms (Views: 2.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-06 10:40:51 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-06 10:40:59 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LJjVdyWVgG8DjSC3b9FChY3Eyf/tU5ha3+VDonLMBYcLTlgHGC0fQjkb5gdn8A7d/bn07fVZIWu12BTdZNo7lw==", "blog_post"=>{"title"=>"3e4343", "body"=>"434343434343"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "3e4343"], ["body", "434343434343"], ["created_at", "2019-12-06 08:40:59.873760"], ["updated_at", "2019-12-06 08:40:59.873760"]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+New blog post 3e4343
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 22ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-06 10:40:59 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/1" for 127.0.0.1 at 2019-12-06 10:45:20 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
