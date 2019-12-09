@@ -1105,3 +1105,1835 @@ Processing by BlogPostsController#show as HTML
 Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.4ms)
 
 
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-06 13:55:15 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LJjVdyWVgG8DjSC3b9FChY3Eyf/tU5ha3+VDonLMBYcLTlgHGC0fQjkb5gdn8A7d/bn07fVZIWu12BTdZNo7lw==", "blog_post"=>{"title"=>"3e4343", "body"=>"434343434343"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "3e4343"], ["body", "434343434343"], ["created_at", "2019-12-06 11:55:15.325193"], ["updated_at", "2019-12-06 11:55:15.325193"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+New blog post 3e4343
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 21ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-06 13:55:15 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-06 13:55:17 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/dell/Documents/trailblazer/guides-operation-03/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2019-12-09 11:27:33 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dell/.rvm/gems/ruby-2.6.3/gems/railties-5.1.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dell/.rvm/gems/ruby-2.6.3/gems/railties-5.1.0/lib/rails/templates/rails/welcome/index.html.erb (4.5ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:27:53 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (1.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 99ms (Views: 13.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 11:27:57 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-09 11:28:01 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 54ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-09 11:28:52 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sCNtIAF2AUU5VSzp8yQ2x+M0D5TyHix6FW2XSrOXF8qX9eBQPM6eaAPD6ln7BXqfk0kyhuoUlUt/UMA1pYEp2g==", "blog_post"=>{"title"=>"333", "body"=>"eewew33333"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "333"], ["body", "eewew33333"], ["created_at", "2019-12-09 09:28:52.437748"], ["updated_at", "2019-12-09 09:28:52.437748"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+New blog post 333
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 30ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:28:52 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 24ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:38:57 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 33ms (Views: 0.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:41:15 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 20ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:41:26 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.2ms)
+Completed 200 OK in 21ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:41:28 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 27ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:41:34 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 25ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:41:35 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:41:47 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `last' for #<BlogPost:0x00007f3d5c457ec8>):
+  
+app/concepts/blog_post/view/item.slim:8:in `block in singleton class'
+app/concepts/blog_post/view/item.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/item.slim:-2:in `singleton class'
+app/concepts/blog_post/view/item.slim:-4:in `__tilt_69950857335660'
+app/concepts/blog_post/view/index.slim:3:in `join'
+app/concepts/blog_post/view/index.slim:3:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_69950857335660'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:42:01 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `last?' for #<BlogPost:0x00007f3d5c67ff98>):
+  
+app/concepts/blog_post/view/item.slim:8:in `block in singleton class'
+app/concepts/blog_post/view/item.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/item.slim:-2:in `singleton class'
+app/concepts/blog_post/view/item.slim:-4:in `__tilt_69950857335660'
+app/concepts/blog_post/view/index.slim:3:in `join'
+app/concepts/blog_post/view/index.slim:3:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_69950857335660'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:44:35 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 41ms (Views: 0.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:44:36 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 25ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:44:42 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:45:31 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.2ms)
+Completed 200 OK in 21ms (Views: 2.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:45:33 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:45:44 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 23ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:45:46 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 20ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:46:12 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 42ms (Views: 1.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:47:14 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 11:47:16 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 11:47:18 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/1" for 127.0.0.1 at 2019-12-09 11:47:21 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:50:34 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 44ms (Views: 2.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:56:08 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 30ms (Views: 1.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:56:10 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:56:12 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:56:13 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 18ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:56:15 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:56:23 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" ASC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 44ms (Views: 1.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 11:56:28 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (3.0ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 44ms (Views: 1.7ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/blog_posts/1" for 127.0.0.1 at 2019-12-09 11:57:46 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/dell/Documents/trailblazer/guides-operation-03/config/initializers/new_framework_defaults.rb:21)
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:15:53 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 43ms (Views: 0.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:15:56 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:15:58 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 18ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:16:56 +0200
+  
+NoMethodError (undefined method `application' for Cell::Slim::Rails:Module):
+  
+app/concepts/blog_post/cell/item.rb:3:in `<class:Item>'
+app/concepts/blog_post/cell/item.rb:2:in `<module:Cell>'
+app/concepts/blog_post/cell/item.rb:1:in `<top (required)>'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:17:20 +0200
+  
+NoMethodError (undefined method `application' for Cell::Slim::Rails:Module):
+  
+app/concepts/blog_post/cell/item.rb:3:in `<class:Item>'
+app/concepts/blog_post/cell/item.rb:2:in `<module:Cell>'
+app/concepts/blog_post/cell/item.rb:1:in `<top (required)>'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:17:23 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+NameError (uninitialized constant BlogPost::Index):
+  
+app/controllers/blog_posts_controller.rb:19:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:18:43 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NameError (uninitialized constant BlogPost::Index):
+  
+app/controllers/blog_posts_controller.rb:19:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:19:00 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 37ms (Views: 3.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:19:22 +0200
+  
+NoMethodError (undefined method `application' for Cell::Slim::Rails:Module):
+  
+app/concepts/blog_post/cell/item.rb:3:in `<class:Item>'
+app/concepts/blog_post/cell/item.rb:2:in `<module:Cell>'
+app/concepts/blog_post/cell/item.rb:1:in `<top (required)>'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:19:25 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+NameError (uninitialized constant BlogPost::Index):
+  
+app/controllers/blog_posts_controller.rb:19:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:19:26 +0200
+Processing by BlogPostsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+NameError (uninitialized constant BlogPost::Index):
+  
+app/controllers/blog_posts_controller.rb:19:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:19:58 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 45ms (Views: 2.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:20:42 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.9ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 30ms (Views: 0.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:20:44 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 16ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:20:45 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 33ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:20:46 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:20:48 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 23ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:20:49 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 18ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 12:20:52 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:22:46 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+Cell::TemplateMissingError (Template missing: view: `item.slim` prefixes: ["app/concepts/blog_post/view"]):
+  
+app/concepts/blog_post/view/index.slim:3:in `join'
+app/concepts/blog_post/view/index.slim:3:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_69950760689860'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 12:23:06 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 12:23:09 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (undefined local variable or method `total' for #<BlogPost::Cell::Show:0x0000563d53d2e678>):
+  
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_69950760689860'
+app/concepts/blog_post/view/show.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_69950760689860'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 12:23:57 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (undefined local variable or method `total' for #<BlogPost::Cell::Show:0x00007f3d5c48d168>):
+  
+app/concepts/blog_post/view/index.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_69950758918840'
+app/concepts/blog_post/view/show.slim:1:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_69950758918840'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 12:30:28 +0200
+  
+NoMethodError (undefined method `application' for Cell::Slim::Rails:Module):
+  
+app/concepts/blog_post/cell/item.rb:3:in `<class:Item>'
+app/concepts/blog_post/cell/item.rb:2:in `<module:Cell>'
+app/concepts/blog_post/cell/item.rb:1:in `<top (required)>'
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 12:31:04 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (16.8ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 42ms (Views: 1.4ms | ActiveRecord: 18.2ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 12:31:07 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 19ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 12:31:19 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 12:45:28 +0200
+  
+NameError (uninitialized constant BlogPost::Cell::Item::Partial):
+  
+app/concepts/blog_post/cell/item.rb:3:in `<class:Item>'
+app/concepts/blog_post/cell/item.rb:2:in `<module:Cell>'
+app/concepts/blog_post/cell/item.rb:1:in `<top (required)>'
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 12:47:10 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 49ms (Views: 1.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 12:47:13 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 24ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 12:47:30 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 20ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 12:47:31 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 16ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 12:48:35 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 12:49:13 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 30ms (Views: 0.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 12:49:22 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 23ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 13:50:20 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 41ms (Views: 0.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 13:50:53 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 32ms (Views: 0.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 13:50:55 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 13:54:11 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 31ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 13:55:48 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 13:55:54 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 13:55:55 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 13:55:56 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 13:56:25 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"blog_posts"}, missing required keys: [:id]):
+  
+app/concepts/blog_post/view/item.slim:11:in `block in singleton class'
+app/concepts/blog_post/view/item.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/item.slim:-2:in `singleton class'
+app/concepts/blog_post/view/item.slim:-4:in `__tilt_47410697074920'
+app/concepts/blog_post/view/index.slim:3:in `join'
+app/concepts/blog_post/view/index.slim:3:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_47410697074920'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 13:56:51 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 24ms (Views: 0.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-09 13:56:53 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 32ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 13:57:22 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.1ms)
+
+
+  
+NoMethodError (undefined method `each_with_index' for #<BlogPost:0x0000563d539fb820>):
+  
+app/concepts/blog_post/view/show.slim:2:in `join'
+app/concepts/blog_post/view/show.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_47410697074920'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 13:57:38 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBlogPost Load (0.6ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 27ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 13:57:54 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 27ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 13:57:55 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBlogPost Load (0.9ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 13:59:27 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 13:59:33 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 25ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 14:02:50 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 13ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:04:08 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 19ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 14:04:09 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 14:04:59 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (undefined local variable or method `created_at' for #<BlogPost::Cell::Show:0x00007f3d5c5abf68>):
+  
+app/concepts/blog_post/view/show.slim:5:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_69950759514700'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 14:11:58 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 24ms (Views: 0.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 14:12:10 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 14:12:12 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 14:12:13 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:12:18 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:14:38 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:14:40 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:14:41 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:14:50 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"blog_posts"}, missing required keys: [:id]):
+  
+app/concepts/blog_post/view/item.slim:13:in `block in singleton class'
+app/concepts/blog_post/view/item.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/item.slim:-2:in `singleton class'
+app/concepts/blog_post/view/item.slim:-4:in `__tilt_69950761382040'
+app/concepts/blog_post/view/index.slim:3:in `join'
+app/concepts/blog_post/view/index.slim:3:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_69950761382040'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:15:04 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 14:15:09 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 7ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 14:15:38 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:15:41 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 14:17:17 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 18ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:19:36 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+Temple::InvalidExpression (Generator supports only core expressions - found [:slim, :output, true, "title_link", [:multi, [:newline]]]):
+  
+app/concepts/blog_post/view/index.slim:3:in `join'
+app/concepts/blog_post/view/index.slim:3:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_69950759519860'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:20:19 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.3ms)
+
+
+  
+Temple::InvalidExpression (Generator supports only core expressions - found [:slim, :output, true, "title_link", [:multi, [:newline]]]):
+  
+app/concepts/blog_post/view/index.slim:3:in `join'
+app/concepts/blog_post/view/index.slim:3:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_69950761192900'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 14:21:52 +0200
+  
+SyntaxError (/home/dell/Documents/trailblazer/guides-operation-03/app/concepts/blog_post/cell/show.rb:5: syntax error, unexpected end, expecting end-of-input):
+  
+app/concepts/blog_post/cell/show.rb:5: syntax error, unexpected end, expecting end-of-input
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 14:21:59 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 5.0ms)
+
+
+  
+Temple::InvalidExpression (Generator supports only core expressions - found [:slim, :output, true, "title_link", [:multi, [:newline]]]):
+  
+app/concepts/blog_post/view/show.slim:2:in `join'
+app/concepts/blog_post/view/show.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_69950759608500'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 14:22:03 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+Temple::InvalidExpression (Generator supports only core expressions - found [:slim, :output, true, "title_link", [:multi, [:newline]]]):
+  
+app/concepts/blog_post/view/show.slim:2:in `join'
+app/concepts/blog_post/view/show.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_69950759608500'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 14:22:40 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.5ms)
+
+
+  
+Temple::InvalidExpression (Generator supports only core expressions - found [:slim, :output, true, "title_link", [:multi, [:newline]]]):
+  
+app/concepts/blog_post/view/show.slim:2:in `join'
+app/concepts/blog_post/view/show.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_47410698066300'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 14:22:43 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+
+  
+Temple::InvalidExpression (Generator supports only core expressions - found [:slim, :output, true, "title_link", [:multi, [:newline]]]):
+  
+app/concepts/blog_post/view/show.slim:2:in `join'
+app/concepts/blog_post/view/show.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_47410698066300'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 14:25:03 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.1ms)
+
+
+  
+Temple::InvalidExpression (Generator supports only core expressions - found [:slim, :output, true, "edit_link", [:multi, [:newline]]]):
+  
+app/concepts/blog_post/view/show.slim:2:in `join'
+app/concepts/blog_post/view/show.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_47410698097880'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 14:25:05 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+Temple::InvalidExpression (Generator supports only core expressions - found [:slim, :output, true, "edit_link", [:multi, [:newline]]]):
+  
+app/concepts/blog_post/view/show.slim:2:in `join'
+app/concepts/blog_post/view/show.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_47410698097880'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 14:25:08 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+
+  
+Temple::InvalidExpression (Generator supports only core expressions - found [:slim, :output, true, "edit_link", [:multi, [:newline]]]):
+  
+app/concepts/blog_post/view/show.slim:2:in `join'
+app/concepts/blog_post/view/show.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_47410698097880'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:25:12 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+
+  
+Temple::InvalidExpression (Generator supports only core expressions - found [:slim, :output, true, "edit_link", [:multi, [:newline]]]):
+  
+app/concepts/blog_post/view/index.slim:3:in `join'
+app/concepts/blog_post/view/index.slim:3:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_47410698097880'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:30:16 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:30:18 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 23ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:30:36 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (app/concepts/blog_post/view/item.slim:5: syntax error, unexpected else
+...rols1); @output_buffer << (else); 
+...                           ^~~~
+app/concepts/blog_post/view/item.slim:22: syntax error, unexpected end, expecting ')'
+end;end;end;end
+^~~):
+  
+app/concepts/blog_post/view/item.slim:5: syntax error, unexpected else
+app/concepts/blog_post/view/item.slim:22: syntax error, unexpected end, expecting ')'
+app/concepts/blog_post/view/index.slim:3:in `join'
+app/concepts/blog_post/view/index.slim:3:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_47410698708760'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:31:08 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 23ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:31:13 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:31:14 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:31:23 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 25ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 14:31:24 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.1ms)
+
+
+  
+NameError (undefined local variable or method `edit_link' for #<BlogPost::Cell::Item:0x00007f3d5c8f3e00>):
+  
+app/concepts/blog_post/view/item.slim:15:in `block in singleton class'
+app/concepts/blog_post/view/item.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/item.slim:-2:in `singleton class'
+app/concepts/blog_post/view/item.slim:-4:in `__tilt_47410696836300'
+app/concepts/blog_post/view/show.slim:2:in `join'
+app/concepts/blog_post/view/show.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_47410696836300'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 14:33:57 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 13ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 14:35:23 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.7ms)
+
+
+  
+NameError (undefined local variable or method `home_link' for #<BlogPost::Cell::Item:0x00007f3d5c6c1ad8>):
+  
+app/concepts/blog_post/view/item.slim:21:in `block in singleton class'
+app/concepts/blog_post/view/item.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/item.slim:-2:in `singleton class'
+app/concepts/blog_post/view/item.slim:-4:in `__tilt_69950758847340'
+app/concepts/blog_post/view/show.slim:2:in `join'
+app/concepts/blog_post/view/show.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_69950758847340'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 14:41:18 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 14:41:21 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 14:41:23 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 11ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/dell/Documents/trailblazer/guides-operation-03/config/initializers/new_framework_defaults.rb:21)
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 18:31:02 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 54ms (Views: 3.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2019-12-09 18:31:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 18:31:06 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blog_posts/1" for 127.0.0.1 at 2019-12-09 18:31:08 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 18:31:11 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 18:31:12 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 18:31:13 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 18:31:14 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 18:31:15 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 18:31:39 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 43ms (Views: 0.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 18:31:42 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 31ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 18:31:44 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 18:31:46 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 18:31:49 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 42ms (Views: 1.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 18:31:51 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 18:31:53 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 18ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 19:03:17 +0200
+  
+NameError (uninitialized constant Trailblazer::Operation::Contract::Persist):
+  
+app/concepts/blog_post/operation/update.rb:9:in `<class:Update>'
+app/concepts/blog_post/operation/update.rb:1:in `<top (required)>'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-09 19:03:30 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 34ms (Views: 1.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 19:03:32 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 14ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-09 19:03:33 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `simple_form_for' for #<BlogPost::Cell::Edit:0x00007fa85c6f1808>
+Did you mean?  simple_format):
+  
+app/concepts/blog_post/view/new.slim:4:in `block in singleton class'
+app/concepts/blog_post/view/new.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/new.slim:-2:in `singleton class'
+app/concepts/blog_post/view/new.slim:-4:in `__tilt_70180540492460'
+app/concepts/blog_post/cell/edit.rb:4:in `show'
+app/controllers/blog_posts_controller.rb:33:in `edit'
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-09 19:04:01 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 1.5ms)
+
+
+  
+NoMethodError (undefined method `simple_form_for' for #<BlogPost::Cell::Edit:0x00007fa85c6ce998>
+Did you mean?  simple_format):
+  
+app/concepts/blog_post/view/new.slim:4:in `block in singleton class'
+app/concepts/blog_post/view/new.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/new.slim:-2:in `singleton class'
+app/concepts/blog_post/view/new.slim:-4:in `__tilt_70180540492460'
+app/concepts/blog_post/cell/edit.rb:4:in `show'
+app/controllers/blog_posts_controller.rb:33:in `edit'
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-09 19:04:22 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 47ms (Views: 0.7ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-09 19:04:26 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b4tZUbhPEsMzUD+v/vyq1ohTmH40bI7MybSjUMLKQS6wVLivg83+zyqyZW8lQ26x74MRWJoob1onwKMmr1SraA==", "blog_post"=>{"title"=>"333", "body"=>"eewew33333222"}, "commit"=>"Create Post", "id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "blog_posts" SET "body" = ?, "updated_at" = ? WHERE "blog_posts"."id" = ?[0m  [["body", "eewew33333222"], ["updated_at", "2019-12-09 17:04:26.875745"], ["id", 3]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 4.0ms)
+
+
+  
+NoMethodError (undefined method `model' for #<Trailblazer::Operation::Result:0x000055974f3226c0>):
+  
+app/controllers/blog_posts_controller.rb:38:in `block in update'
+app/controllers/blog_posts_controller.rb:37:in `update'
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-09 19:05:11 +0200
+  
+SyntaxError (/home/dell/Documents/trailblazer/guides-operation-03/app/controllers/blog_posts_controller.rb:38: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...tice] = "#{result['model']title} has ben saved"
+...                          ^~~~~):
+  
+app/controllers/blog_posts_controller.rb:38: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-09 19:05:22 +0200
+  
+SyntaxError (/home/dell/Documents/trailblazer/guides-operation-03/app/controllers/blog_posts_controller.rb:38: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...tice] = "#{result['model']title} has ben saved"
+...                          ^~~~~):
+  
+app/controllers/blog_posts_controller.rb:38: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-09 19:05:30 +0200
+  
+SyntaxError (/home/dell/Documents/trailblazer/guides-operation-03/app/controllers/blog_posts_controller.rb:38: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...tice] = "#{result['model']title} has ben saved"
+...                          ^~~~~):
+  
+app/controllers/blog_posts_controller.rb:38: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-09 19:05:38 +0200
+  
+SyntaxError (/home/dell/Documents/trailblazer/guides-operation-03/app/controllers/blog_posts_controller.rb:38: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...tice] = "#{result['model']title} has ben saved"
+...                          ^~~~~):
+  
+app/controllers/blog_posts_controller.rb:38: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-09 19:06:35 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b4tZUbhPEsMzUD+v/vyq1ohTmH40bI7MybSjUMLKQS6wVLivg83+zyqyZW8lQ26x74MRWJoob1onwKMmr1SraA==", "blog_post"=>{"title"=>"333", "body"=>"eewew33333222"}, "commit"=>"Create Post", "id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `model' for #<Trailblazer::Operation::Result:0x000055974fef23b0>):
+  
+app/controllers/blog_posts_controller.rb:39:in `block in update'
+app/controllers/blog_posts_controller.rb:37:in `update'
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-09 19:06:54 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b4tZUbhPEsMzUD+v/vyq1ohTmH40bI7MybSjUMLKQS6wVLivg83+zyqyZW8lQ26x74MRWJoob1onwKMmr1SraA==", "blog_post"=>{"title"=>"333", "body"=>"eewew33333222"}, "commit"=>"Create Post", "id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts.3
+Completed 302 Found in 22ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/blog_posts.3" for 127.0.0.1 at 2019-12-09 19:06:54 +0200
+Processing by BlogPostsController#index as 
+  [1m[36mBlogPost Load (1.0ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 30ms (Views: 1.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-09 19:06:58 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2/edit" for 127.0.0.1 at 2019-12-09 19:07:00 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/blog_posts/2" for 127.0.0.1 at 2019-12-09 19:07:03 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ic3CNEyZiN6HkhHviNRPAJKBZEL9zRl+BEVxgjqGdPKEsogiM7weVsPvMunPfukNB90AsYgscKlrVrSdIoXWGw==", "blog_post"=>{"title"=>"3e4343", "body"=>"4343431111"}, "commit"=>"Create Post", "id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "blog_posts" SET "body" = ?, "updated_at" = ? WHERE "blog_posts"."id" = ?[0m  [["body", "4343431111"], ["updated_at", "2019-12-09 17:07:03.840754"], ["id", 2]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts.2
+Completed 302 Found in 12ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/blog_posts.2" for 127.0.0.1 at 2019-12-09 19:07:03 +0200
+Processing by BlogPostsController#index as 
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 16ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 19:07:11 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-09 19:07:15 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 19ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-09 19:07:45 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.2ms)
+Completed 200 OK in 16ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-09 19:07:49 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v5LlTCl6aUN6ET5ZDxzVds+cqBIyW6S6FNfra3ygux5gTQSyEviFT2PzZJnUoxERqEwhNJwfRSz6o+sdET5RWA==", "blog_post"=>{"title"=>"333111", "body"=>"eewew33333222"}, "commit"=>"Create Post", "id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "blog_posts" SET "title" = ?, "updated_at" = ? WHERE "blog_posts"."id" = ?[0m  [["title", "333111"], ["updated_at", "2019-12-09 17:07:49.202403"], ["id", 3]]
+  [1m[35m (9.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts.3
+Completed 302 Found in 19ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/blog_posts.3" for 127.0.0.1 at 2019-12-09 19:07:49 +0200
+Processing by BlogPostsController#index as 
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-09 19:07:52 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-09 19:07:55 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+

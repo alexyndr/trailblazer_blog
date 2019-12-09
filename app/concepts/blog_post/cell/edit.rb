@@ -1,7 +1,9 @@
 module BlogPost::Cell
-  class Show < Trailblazer::Cell
-    def edit_link
-      link_to 'Edit', edit_blog_post_path(model)
+  class Edit < Trailblazer::Cell
+    include SimpleForm::ActionViewExtensions::FormHelper # for use simple_for in new view
+
+    def show
+      render :new
     end
 
     def delete_link

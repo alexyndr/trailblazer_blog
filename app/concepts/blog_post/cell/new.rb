@@ -1,7 +1,7 @@
 module BlogPost::Cell
   class New < Trailblazer::Cell
-    include ActionView::RecordIdentifier
-    include ActionView::Helpers::FormOptionsHelper
-    include SimpleForm::ActionViewExtensions::FormHelper
+    include ActionView::RecordIdentifier                 # for work with form
+    # include ActionView::Helpers::FormOptionsHelper
+    include SimpleForm::ActionViewExtensions::FormHelper # for use simple_for in new view
   end
 end
