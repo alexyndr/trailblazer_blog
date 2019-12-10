@@ -2937,3 +2937,3206 @@ Processing by BlogPostsController#edit as HTML
 Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 0.2ms)
 
 
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/dell/Documents/trailblazer/guides-operation-03/config/initializers/new_framework_defaults.rb:21)
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:37:44 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 50ms (Views: 4.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 09:37:46 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 32ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:38:19 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2uInzDRZ2fsiPvrEhjBuoFtI7LJTp2hl/M5/PaTgOKEFPcYyD9s19zvcoARdj6rHPJhllP3jifMSun9LyX7S5w==", "blog_post"=>{"title"=>"333111", "body"=>"eewew33333222"}, "commit"=>"Create Post", "id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts.3
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts.3" for 127.0.0.1 at 2019-12-10 09:38:19 +0200
+Processing by BlogPostsController#index as 
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 09:38:27 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 29ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:38:34 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 09:38:36 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:38:39 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OFbQ4pdm1futhQKpoAnostfnTH6NxjELYzIiG3Lyy1LniTEcrOQ597RnWGl7tizVsDfFWCOC0J2NRiJtH2whFA==", "blog_post"=>{"title"=>"333111", "body"=>"eewew33333222"}, "commit"=>"Create Post", "id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts.3
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts.3" for 127.0.0.1 at 2019-12-10 09:38:40 +0200
+Processing by BlogPostsController#index as 
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 29ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:38:42 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 09:38:43 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 12ms (Views: 1.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 09:40:46 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 17ms (Views: 0.7ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:41:14 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/ThQYmtDrOffbaUnuhNcBdooj2FR4ErZC4tf28ZoYVYi57GcUMFA68aP/+dhrJhivfgGR/+kq0/l/1+tq/aLEA==", "blog_post"=>{"title"=>"333111a", "body"=>"eewew33333222"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "blog_posts" SET "title" = ?, "updated_at" = ? WHERE "blog_posts"."id" = ?[0m  [["title", "333111a"], ["updated_at", "2019-12-10 07:41:14.028610"], ["id", 3]]
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts.3
+Completed 302 Found in 21ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/blog_posts.3" for 127.0.0.1 at 2019-12-10 09:41:14 +0200
+Processing by BlogPostsController#index as 
+  [1m[36mBlogPost Load (0.6ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 23ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:41:16 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 09:41:17 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 13ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:41:24 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xnBhfSZ6lLr6M4m3qgWEBHmwO+9a4Z66d8s8inKW7LcZr4CDHfh4tuPR03dxukBjHmCyyfSlfyyZvzz8HwgG8Q==", "blog_post"=>{"title"=>"333111a", "body"=>"eewew3"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (undefined local variable or method `model' for #<BlogPostsController:0x00007f87c84853a8>
+Did you mean?  @model
+               module):
+  
+app/controllers/blog_posts_controller.rb:42:in `update'
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:43:28 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xnBhfSZ6lLr6M4m3qgWEBHmwO+9a4Z66d8s8inKW7LcZr4CDHfh4tuPR03dxukBjHmCyyfSlfyyZvzz8HwgG8Q==", "blog_post"=>{"title"=>"333111a", "body"=>"eewew3"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.8ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:43:30 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KoJGNAPsYkomHBs5cXxcqcXOWcr0LO6qUu5h1hJL2jv1XafKOG6ORj/+Qfmqw5jOoh7Q7FpoDzy8mmGgf9UwfQ==", "blog_post"=>{"title"=>"333111a", "body"=>"eewew3"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 16ms (Views: 0.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:43:31 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0TDJ4ny3PACbL1uF0fAESiD1oyJ0fGIuNNlS+7zJ08AO7ygcRzXQDILNAUUKT8AtRyUqBNo4g7jarVKN0Vc5hg==", "blog_post"=>{"title"=>"333111a", "body"=>"eewew3"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 15ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:43:33 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KEgb5QAWJ9Os2sckoQpw4Zcm/5hI3CkigAElpSWpomX3l/obO5TL37U4neR6tbSG8PZ2vuaYyLRudSXTSDdIIw==", "blog_post"=>{"title"=>"333111a", "body"=>"eewew3"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 14ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:43:41 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MUNZRNETUJqCWy+5cnrrudnGQhP4ks1A/IL1DjqlCvXunLi66pG8lpu5dXmpxS/evhbLNVbWLNYS9vV4Vzvgsw==", "blog_post"=>{"title"=>"333111a", "body"=>"eewew3"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 30ms (Views: 0.8ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:43:42 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vX6ybf7iUK2TwGcO6i+lDKa3m1c9bnB2oiYIWIC/o6ZioVOTxWC8oYoiPc4xkGFrwWcScZMqkeBMUggu7SFJ4A==", "blog_post"=>{"title"=>"333111a", "body"=>"eewew3"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:43:43 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XPcIQyEhbVsX48RJhm0F4fCmrkRHTIoy4rrBYYzzODODKOm9GqOBVw4Bnold0sGGl3YnYukIa6QMzsEX4W3SdQ==", "blog_post"=>{"title"=>"333111a", "body"=>"eewew3"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:43:44 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/my3kOf79EiMUOFk3VsO92XbSrEZeWXuy/F/BQWBCHEhs1Zu3HkYRJWyu6QG5MqQAgvDl7c9hHglhX9zaB/iNw==", "blog_post"=>{"title"=>"333111a", "body"=>"eewew3"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:43:45 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x6jI37ycFzUwcNHHf/svpni+epxH+8QUNu+REsb4fuEYdykhhx77OSmSiwekROvBH27zuum/JYLYm5Fkq2aUpw==", "blog_post"=>{"title"=>"333111a", "body"=>"eewew3"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:43:55 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jSSIcOUxk0he+4v0dkAUFN9Uo37AC+oMBhopSRS7lp9S+2mO3rN/REcZ0TSt/9BzuIQqWG5PC5robik/eSV82Q==", "blog_post"=>{"title"=>"333111a", "body"=>"eewew3"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 32ms (Views: 2.7ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:43:56 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JT15ni6nVrNKLaLDJedfn60luUBkKL7xlxsu4B3f3AT64phgFSW6v1PP+AP+WJv4yvUwZspsX2d5by6WcEE2Qg==", "blog_post"=>{"title"=>"333111a", "body"=>"eewew3"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 19ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:43:57 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"heCG14IvCsmsWbM++XQuX6EsFauOuG5HlxbewlTAmUxaP2cpua3mxbW76f4iy+o4xvycjSD8j9F5Yt60OV5zCg==", "blog_post"=>{"title"=>"333111a", "body"=>"eewew3"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 09:44:02 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:44:04 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 09:44:05 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:44:12 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ju3wGQJwb0jtiEfsCB2mbc0qK+RllpcvUl/KAiq/rgZRMhHnOfKDRPRqHSzTomIKqvqiwsvSdrm8K8p0RyFEQA==", "blog_post"=>{"title"=>"333111a", "body"=>"22"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 19ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:44:29 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hccnfjh4T/NpmzwixRQvG++8JhtJOheCTc6t0VFDobRaGMaAA/qj/3B5ZuIeq+t8iGyvPed+9hSjuq2nPN1L8g==", "blog_post"=>{"title"=>"333111a", "body"=>"22444444"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 26ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:44:31 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8hB+/+qFMHeRZRXLPrGCBorUbcxL6HXSWIn7uunZnJQtz58B0Qfce4iHTwvlDkZh7QTk6uWslES2/fvMhEd20g==", "blog_post"=>{"title"=>"333111a", "body"=>"22444444"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:44:33 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"onMcZfmvdc065S5KMzsuPqtYCJuYLsNyR8h62d7v9eN9rP2bwi2ZwSMHdIrohOpZzIiBvTZqIuSpvHqvs3EfpQ==", "blog_post"=>{"title"=>"333111a", "body"=>"22444444r5"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[33mUPDATE "blog_posts" SET "body" = ?, "updated_at" = ? WHERE "blog_posts"."id" = ?[0m  [["body", "22444444r5"], ["updated_at", "2019-12-10 07:44:33.590776"], ["id", 3]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts.3
+Completed 302 Found in 18ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/blog_posts.3" for 127.0.0.1 at 2019-12-10 09:44:33 +0200
+Processing by BlogPostsController#index as 
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:45:21 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 09:45:23 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 12ms (Views: 2.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 09:45:48 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 09:45:49 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 09:45:54 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 09:45:55 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 09:46:09 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 09:46:19 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:46:20 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 09:46:21 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 09:46:24 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 09:46:26 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 11ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 09:49:48 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 32ms (Views: 0.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 09:49:50 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 09:49:51 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/dell/Documents/trailblazer/guides-operation-03/config/initializers/new_framework_defaults.rb:21)
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 09:52:32 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.2ms)
+
+
+  
+NameError (undefined local variable or method `new_blog_post' for #<BlogPost::Cell::Index:0x00007f87c83ec4c8>
+Did you mean?  new_blog_post_url):
+  
+app/concepts/blog_post/cell/index.rb:10:in `create_link'
+app/concepts/blog_post/view/index.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/index.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/index.slim:-2:in `singleton class'
+app/concepts/blog_post/view/index.slim:-4:in `__tilt_70110577762560'
+app/controllers/blog_posts_controller.rb:21:in `index'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 09:52:59 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 65ms (Views: 0.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-10 09:53:01 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-10 09:53:09 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gMX1WtkoOWskpgSPEhU03XtMkVmku8UcEansZctWVPCnE3gq5JCmRh4wwj8aNHiFCzGsS7yxfC17lLsa3UBq4A==", "blog_post"=>{"title"=>"222", "body"=>"111111111111"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "222"], ["body", "111111111111"], ["created_at", "2019-12-10 07:53:09.377928"], ["updated_at", "2019-12-10 07:53:09.377928"]]
+  [1m[35m (9.6ms)[0m  [1m[36mcommit transaction[0m
+New blog post 222
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 18ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 09:53:09 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-10 09:54:04 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-10 09:55:09 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 32ms (Views: 0.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 09:55:12 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 29ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-10 09:55:15 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 09:55:16 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 26ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 09:55:17 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 09:55:19 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 33ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 09:55:22 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/4/edit" for 127.0.0.1 at 2019-12-10 09:55:23 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:06:15 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 26ms (Views: 0.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 10:06:19 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 27ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:06:22 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:06:24 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 10:06:27 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 25ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:06:29 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:06:30 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:06:31 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:06:31 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:06:32 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:06:32 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:06:32 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:10:08 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:10:10 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:10:11 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 10ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:10:12 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3/edit" for 127.0.0.1 at 2019-12-10 10:11:24 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:11:25 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:11:27 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:11:28 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:14:21 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:14:22 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:14:22 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:14:23 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 10:20:08 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 25ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:20:10 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:20:12 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:20:13 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:20:15 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:20:16 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:23:48 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:23:51 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:24:33 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 20ms (Views: 1.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:24:34 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:24:36 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:24:37 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 10:24:39 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 38ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:24:40 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:24:41 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 10:27:23 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 10:27:25 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:27:26 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2/edit" for 127.0.0.1 at 2019-12-10 10:27:28 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:27:30 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 9ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:27:34 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:29:45 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:29:46 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:29:47 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 10ms (Views: 1.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:29:47 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:29:48 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:32:04 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 19ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:32:05 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:32:05 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (1.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 12ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:32:06 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:32:07 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:32:08 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:32:08 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 12ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:32:09 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:32:10 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:32:10 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/dell/Documents/trailblazer/guides-operation-03/config/initializers/new_framework_defaults.rb:21)
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 10:34:20 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 50ms (Views: 3.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:34:21 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.6ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 12ms (Views: 2.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:34:28 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:34:32 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:34:33 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:34:34 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:34:35 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 29ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:38:38 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:39:40 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 30ms (Views: 0.7ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:39:42 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t8TJCwizbk+esR/R0nhEC1Ep5HL/DW1UWFS2Z571yZuZP80cGuDz9hTPcl7bithKYBZnWy/AXQlw/kkMqMvuQQ==", "id"=>"4"}
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Started DELETE "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:39:43 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t8TJCwizbk+esR/R0nhEC1Ep5HL/DW1UWFS2Z571yZuZP80cGuDz9hTPcl7bithKYBZnWy/AXQlw/kkMqMvuQQ==", "id"=>"4"}
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Started DELETE "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:39:44 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t8TJCwizbk+esR/R0nhEC1Ep5HL/DW1UWFS2Z571yZuZP80cGuDz9hTPcl7bithKYBZnWy/AXQlw/kkMqMvuQQ==", "id"=>"4"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Started DELETE "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:39:44 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t8TJCwizbk+esR/R0nhEC1Ep5HL/DW1UWFS2Z571yZuZP80cGuDz9hTPcl7bithKYBZnWy/AXQlw/kkMqMvuQQ==", "id"=>"4"}
+  [1m[36mBlogPost Load (0.6ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Started DELETE "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:39:44 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t8TJCwizbk+esR/R0nhEC1Ep5HL/DW1UWFS2Z571yZuZP80cGuDz9hTPcl7bithKYBZnWy/AXQlw/kkMqMvuQQ==", "id"=>"4"}
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Started DELETE "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:39:44 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t8TJCwizbk+esR/R0nhEC1Ep5HL/DW1UWFS2Z571yZuZP80cGuDz9hTPcl7bithKYBZnWy/AXQlw/kkMqMvuQQ==", "id"=>"4"}
+Started DELETE "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:39:44 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t8TJCwizbk+esR/R0nhEC1Ep5HL/DW1UWFS2Z571yZuZP80cGuDz9hTPcl7bithKYBZnWy/AXQlw/kkMqMvuQQ==", "id"=>"4"}
+Started DELETE "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:39:44 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t8TJCwizbk+esR/R0nhEC1Ep5HL/DW1UWFS2Z571yZuZP80cGuDz9hTPcl7bithKYBZnWy/AXQlw/kkMqMvuQQ==", "id"=>"4"}
+Started DELETE "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:39:45 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t8TJCwizbk+esR/R0nhEC1Ep5HL/DW1UWFS2Z571yZuZP80cGuDz9hTPcl7bithKYBZnWy/AXQlw/kkMqMvuQQ==", "id"=>"4"}
+Started DELETE "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:39:45 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t8TJCwizbk+esR/R0nhEC1Ep5HL/DW1UWFS2Z571yZuZP80cGuDz9hTPcl7bithKYBZnWy/AXQlw/kkMqMvuQQ==", "id"=>"4"}
+Started DELETE "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:39:45 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t8TJCwizbk+esR/R0nhEC1Ep5HL/DW1UWFS2Z571yZuZP80cGuDz9hTPcl7bithKYBZnWy/AXQlw/kkMqMvuQQ==", "id"=>"4"}
+Started DELETE "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:39:47 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t8TJCwizbk+esR/R0nhEC1Ep5HL/DW1UWFS2Z571yZuZP80cGuDz9hTPcl7bithKYBZnWy/AXQlw/kkMqMvuQQ==", "id"=>"4"}
+Completed 500 Internal Server Error in 5002ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::ConnectionTimeoutError (could not obtain a connection from the pool within 5.000 seconds (waited 5.000 seconds); all pooled connections were in use):
+  
+app/controllers/blog_posts_controller.rb:46:in `destroy'
+Completed 500 Internal Server Error in 5003ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::ConnectionTimeoutError (could not obtain a connection from the pool within 5.000 seconds (waited 5.000 seconds); all pooled connections were in use):
+  
+app/controllers/blog_posts_controller.rb:46:in `destroy'
+Completed 500 Internal Server Error in 5001ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::ConnectionTimeoutError (could not obtain a connection from the pool within 5.000 seconds (waited 5.000 seconds); all pooled connections were in use):
+  
+app/controllers/blog_posts_controller.rb:46:in `destroy'
+Completed 500 Internal Server Error in 5003ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::ConnectionTimeoutError (could not obtain a connection from the pool within 5.000 seconds (waited 5.000 seconds); all pooled connections were in use):
+  
+app/controllers/blog_posts_controller.rb:46:in `destroy'
+Completed 500 Internal Server Error in 5002ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::ConnectionTimeoutError (could not obtain a connection from the pool within 5.000 seconds (waited 5.000 seconds); all pooled connections were in use):
+  
+app/controllers/blog_posts_controller.rb:46:in `destroy'
+Completed 500 Internal Server Error in 5003ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::ConnectionTimeoutError (could not obtain a connection from the pool within 5.000 seconds (waited 5.000 seconds); all pooled connections were in use):
+  
+app/controllers/blog_posts_controller.rb:46:in `destroy'
+Completed 500 Internal Server Error in 5002ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::ConnectionTimeoutError (could not obtain a connection from the pool within 5.000 seconds (waited 5.000 seconds); all pooled connections were in use):
+  
+app/controllers/blog_posts_controller.rb:46:in `destroy'
+Started DELETE "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:40:19 +0200
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "blog_posts" WHERE "blog_posts"."id" = ?[0m  [["id", 4]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 116120ms (ActiveRecord: 7.3ms)
+
+
+Completed   in 136737ms (ActiveRecord: 0.7ms)
+
+
+Completed   in 135040ms (ActiveRecord: 0.4ms)
+
+
+Completed   in 134907ms (ActiveRecord: 1.1ms)
+
+
+Completed   in 135568ms (ActiveRecord: 1.5ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/dell/Documents/trailblazer/guides-operation-03/config/initializers/new_framework_defaults.rb:21)
+Started GET "/blog_posts/4" for 127.0.0.1 at 2019-12-10 10:42:09 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"edit", :controller=>"blog_posts", :id=>nil}, missing required keys: [:id]):
+  
+app/concepts/blog_post/cell/show.rb:4:in `edit_link'
+app/concepts/blog_post/view/show.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_47228447050240'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/" for 127.0.0.1 at 2019-12-10 10:42:13 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 70ms (Views: 1.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:42:17 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/blog_posts/2" for 127.0.0.1 at 2019-12-10 10:42:18 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aC6SSM7RBVR55JnS7kF74/F0RIuv553W98I5NpwWCOd5agqChVrLHhIUiI/ILjqnOpGOq5m/h/lL1AtFDqLMBw==", "id"=>"2"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "blog_posts" WHERE "blog_posts"."id" = ?[0m  [["id", 2]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 10ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 10:42:18 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blog_posts/1" for 127.0.0.1 at 2019-12-10 10:42:45 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/1/edit" for 127.0.0.1 at 2019-12-10 10:42:47 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 36ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/1" for 127.0.0.1 at 2019-12-10 10:42:49 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/blog_posts/1" for 127.0.0.1 at 2019-12-10 10:52:18 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+YfanQYZ4tW1KEVdTifgrkwwpjcGY9A0HmRu7ACCw0oVl+LlLc6Z4wdSi1Pll6YlighFEFsF6SHGc6sPJ84MRQ==", "id"=>"1"}
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "blog_posts" WHERE "blog_posts"."id" = ?[0m  [["id", 1]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 40ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 10:52:18 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 17ms (Views: 1.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog_posts/1" for 127.0.0.1 at 2019-12-10 10:52:20 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"edit", :controller=>"blog_posts", :id=>nil}, missing required keys: [:id]):
+  
+app/concepts/blog_post/cell/show.rb:4:in `edit_link'
+app/concepts/blog_post/view/show.slim:2:in `block in singleton class'
+app/concepts/blog_post/view/show.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/show.slim:-2:in `singleton class'
+app/concepts/blog_post/view/show.slim:-4:in `__tilt_70346702112720'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-10 10:52:26 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/dell/Documents/trailblazer/guides-operation-03/config/initializers/new_framework_defaults.rb:21)
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-10 11:21:23 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 70ms (Views: 3.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 11:21:26 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 11:21:29 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 16ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 11:21:30 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.2ms)
+Completed 200 OK in 15ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 11:21:47 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 12ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 11:25:21 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 11:25:22 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 13ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 11:25:23 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 36ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 11:25:24 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 11:27:52 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.5ms)
+
+
+  
+ArgumentError (String, Proc, :default, true, or false, expected for `layout'; you passed BlogPost::Cell::Layout):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 11:28:13 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.6ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 2.4ms)
+
+
+  
+ArgumentError (There was no default layout for BlogPostsController in #<ActionView::PathSet:0x00005603799f5c18 @paths=[]>):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 11:28:51 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.3ms)
+
+
+  
+ArgumentError (String, Proc, :default, true, or false, expected for `layout'; you passed BlogPost::Cell::Layout):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 11:30:03 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.6ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 37ms (Views: 1.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 11:30:05 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 11:30:06 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2019-12-10 11:30:08 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 12ms (Views: 1.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 11:30:09 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 15ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-10 11:30:11 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 14ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 11:30:15 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 11:30:21 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-10 11:30:22 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-10 11:30:27 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N+s3zgCgJi3M7nDMgcCRG8ke7xnsObCuHX0i8wEfYsAQPbq+PRi5APZ4tnyJ4d1DuWPSC/QzCZ93QHWMFwlc0A==", "blog_post"=>{"title"=>"sasasa", "body"=>"aaaaaaaaaaaaaaaa"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sasasa"], ["body", "aaaaaaaaaaaaaaaa"], ["created_at", "2019-12-10 09:30:27.008189"], ["updated_at", "2019-12-10 09:30:27.008189"]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+New blog post sasasa
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 17ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 11:30:27 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (2.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 28ms (Views: 0.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-10 11:30:29 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-10 11:30:34 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rm4Qkj9x4xEe+whCez5cGEBoYbALSMD6ek/SAdyGmsxhuJ3iAsl8PCRtzvJzHxBAMBVcohNCecsQcoV+ypCk3A==", "blog_post"=>{"title"=>"aaaaa", "body"=>"aaaaaaaaaaaaaaaa"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "aaaaa"], ["body", "aaaaaaaaaaaaaaaa"], ["created_at", "2019-12-10 09:30:34.761493"], ["updated_at", "2019-12-10 09:30:34.761493"]]
+  [1m[35m (9.1ms)[0m  [1m[36mcommit transaction[0m
+New blog post aaaaa
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 18ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 11:30:34 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 25ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-10 11:30:39 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-10 11:30:40 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 10ms (Views: 1.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-10 11:46:05 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.2ms)
+
+
+  
+Slim::Parser::SyntaxError (Unknown line indicator
+  app/concepts/blog_post/view/layout.slim, Line 1, Column 0
+    !!!
+    ^
+):
+  
+app/concepts/blog_post/view/layout.slim:1
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-10 11:47:43 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 2.4ms)
+
+
+  
+Slim::Parser::SyntaxError (Unknown line indicator
+  app/concepts/blog_post/view/layout.slim, Line 1, Column 0
+    %html
+    ^
+):
+  
+app/concepts/blog_post/view/layout.slim:1
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-10 11:48:08 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+Completed 500 Internal Server Error in 405ms (ActiveRecord: 0.3ms)
+
+
+  
+ArgumentError (There was no default layout for BlogPostsController in #<ActionView::PathSet:0x00007f8f601a8410 @paths=[]>):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/6" for 127.0.0.1 at 2019-12-10 14:54:35 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.2ms)
+
+
+  
+ArgumentError (There was no default layout for BlogPostsController in #<ActionView::PathSet:0x00007f8f61a2adf8 @paths=[]>):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-10 14:55:11 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.2ms)
+
+
+  
+ArgumentError (There was no default layout for BlogPostsController in #<ActionView::PathSet:0x00007f8f62440ba8 @paths=[]>):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-10 14:55:15 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 14ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-10 14:55:23 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B4lJugt53zjwPeKM5ImB+Q+0LqqP2bqTdAqrnSBI0lAgX8TKNsFAFcqrJDzsqM2hf8kTuJfTA6IeN/ziNl7sQA==", "blog_post"=>{"title"=>"kjkjk", "body"=>"aaaaaaaaaaaaaaaa"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "kjkjk"], ["body", "aaaaaaaaaaaaaaaa"], ["created_at", "2019-12-10 12:55:23.977554"], ["updated_at", "2019-12-10 12:55:23.977554"]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+New blog post kjkjk
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 14ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 14:55:24 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 14:55:27 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms)
+
+
+  
+ArgumentError (There was no default layout for BlogPostsController in #<ActionView::PathSet:0x00007f8f6130ac58 @paths=[]>):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 14:55:45 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.8ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 28ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 14:55:58 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.2ms)
+
+
+  
+ArgumentError (There was no default layout for BlogPostsController in #<ActionView::PathSet:0x00007f8f62344d08 @paths=[]>):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 14:58:56 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (1.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 4.6ms)
+
+
+  
+ActionView::MissingTemplate (Missing template <html><head><title>BlogPost</title><link rel="stylesheet" media="all" href="/stylesheets/application.css" /><script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" data-turbolinks-track="true"></script>
+<script src="/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" data-turbolinks-track="true"></script>
+<script src="/assets/application.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" data-turbolinks-track="true"></script></head><body><div class="post-preview"><h2 class="post-title">kjkjk</h2><p class="post-meta">Posted at 10 December 2019<p>aaaaaaaaaaaaaaaa</p></p></div><a href="/blog_posts/7/edit">Edit</a><p></p><a rel="nofollow" data-method="delete" href="/blog_posts/7">Delete</a><p></p><a href="/blog_posts">Back to posts list</a></body></html> with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :slim]}. Searched in:
+):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 14:59:16 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+Slim::Parser::SyntaxError (Unknown line indicator
+  app/concepts/blog_post/view/layout.slim, Line 1, Column 0
+    !!!
+    ^
+):
+  
+app/concepts/blog_post/view/layout.slim:1
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 14:59:21 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::MissingTemplate (Missing template <html><head><title>BlogPost</title><link rel="stylesheet" media="all" href="/stylesheets/application.css" /><script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" data-turbolinks-track="true"></script>
+<script src="/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" data-turbolinks-track="true"></script>
+<script src="/assets/application.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" data-turbolinks-track="true"></script></head><body><div class="post-preview"><h2 class="post-title">kjkjk</h2><p class="post-meta">Posted at 10 December 2019<p>aaaaaaaaaaaaaaaa</p></p></div><a href="/blog_posts/7/edit">Edit</a><p></p><a rel="nofollow" data-method="delete" href="/blog_posts/7">Delete</a><p></p><a href="/blog_posts">Back to posts list</a></body></html> with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :slim]}. Searched in:
+):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:06:11 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 2.2ms)
+
+
+  
+ArgumentError (There was no default layout for BlogPostsController in #<ActionView::PathSet:0x00007f8f622c5300 @paths=[]>):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:06:55 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::MissingTemplate (Missing template <html><head><title>BlogPost</title><link rel="stylesheet" media="all" href="/stylesheets/application.css" /><script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" data-turbolinks-track="true"></script>
+<script src="/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" data-turbolinks-track="true"></script>
+<script src="/assets/application.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" data-turbolinks-track="true"></script></head><body><div class="post-preview"><h2 class="post-title">kjkjk</h2><p class="post-meta">Posted at 10 December 2019<p>aaaaaaaaaaaaaaaa</p></p></div><a href="/blog_posts/7/edit">Edit</a><p></p><a rel="nofollow" data-method="delete" href="/blog_posts/7">Delete</a><p></p><a href="/blog_posts">Back to posts list</a></body></html> with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :slim]}. Searched in:
+):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:08:51 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.6ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 3.7ms)
+
+
+  
+ArgumentError (There was no default layout for BlogPostsController in #<ActionView::PathSet:0x00007f8f613c8d98 @paths=[]>):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:09:12 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::MissingTemplate (Missing template <html><head><title>BlogPost</title><link rel="stylesheet" media="all" href="/stylesheets/application.css" /><script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" data-turbolinks-track="true"></script>
+<script src="/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" data-turbolinks-track="true"></script>
+<script src="/assets/application.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" data-turbolinks-track="true"></script></head><body><div class="post-preview"><h2 class="post-title">kjkjk</h2><p class="post-meta">Posted at 10 December 2019<p>aaaaaaaaaaaaaaaa</p></p></div><a href="/blog_posts/7/edit">Edit</a><p></p><a rel="nofollow" data-method="delete" href="/blog_posts/7">Delete</a><p></p><a href="/blog_posts">Back to posts list</a></body></html> with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :slim]}. Searched in:
+):
+  
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:12:24 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 35ms (Views: 19.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2019-12-10 15:12:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started DELETE "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:12:39 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"id"=>"7"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.0) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.0) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.0) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.0) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.0) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.0) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.0) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.0) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.0) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.0) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.0) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.0) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.0) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 15:13:08 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 31ms (Views: 1.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:13:09 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2019-12-10 15:13:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:13:30 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 71ms (Views: 15.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:13:38 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:13:44 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.8ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 42ms (Views: 23.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2019-12-10 15:13:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started DELETE "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:13:50 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"id"=>"7"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.0) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.0) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.0) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.0) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.0) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.0) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.0) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.0) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.0) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.0) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.0) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.0) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.0) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started DELETE "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:15:33 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"id"=>"7"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.0) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.0) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.0) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.0) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.0) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.0) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.0) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.0) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.0) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.0) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.0) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.0) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.0) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:15:37 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2019-12-10 15:15:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started DELETE "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:15:39 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"id"=>"7"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.0) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.0) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.0) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.0) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.0) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.0) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.0) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.0) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.0) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.0) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.0) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.0) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.0) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:15:50 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2019-12-10 15:15:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:18:47 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.1ms)
+
+
+  
+NameError (undefined local variable or method `csrf_meta_tags' for #<BlogPost::Cell::Layout:0x00007f8f61df7850>):
+  
+app/concepts/blog_post/view/layout.slim:4:in `block in singleton class'
+app/concepts/blog_post/view/layout.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/layout.slim:-2:in `singleton class'
+app/concepts/blog_post/view/layout.slim:-4:in `__tilt_70126898604040'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:20:54 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (undefined local variable or method `csrf_meta_tag' for #<BlogPost::Cell::Layout:0x00007f8f62795f88>):
+  
+app/concepts/blog_post/view/layout.slim:4:in `block in singleton class'
+app/concepts/blog_post/view/layout.slim:-2:in `instance_eval'
+app/concepts/blog_post/view/layout.slim:-2:in `singleton class'
+app/concepts/blog_post/view/layout.slim:-4:in `__tilt_70126904245540'
+app/controllers/blog_posts_controller.rb:27:in `show'
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:22:20 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2019-12-10 15:22:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts/7/edit" for 127.0.0.1 at 2019-12-10 15:22:23 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2019-12-10 15:22:23 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started PATCH "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:22:24 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hQAEVCsFQov0MM69TEz29fwwPHdu0WhUPlmrvdmAFL3/uOahodPd5hAtMlh5PXZbPbOm+s7/MxGIKJ+QSPx+pw==", "blog_post"=>{"title"=>"kjkjk", "body"=>"aaaaaaaaaaaaaaaa"}, "commit"=>"Save", "id"=>"7"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts.7
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts.7" for 127.0.0.1 at 2019-12-10 15:22:24 +0200
+Processing by BlogPostsController#index as 
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/6" for 127.0.0.1 at 2019-12-10 15:22:26 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2019-12-10 15:22:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started DELETE "/blog_posts/6" for 127.0.0.1 at 2019-12-10 15:22:27 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"id"=>"6"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.0) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.0) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.0) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.0) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.0) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.0) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.0) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.0) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.0) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.0) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.0) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.0) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.0) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.0) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.0) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts/6" for 127.0.0.1 at 2019-12-10 15:23:34 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 27ms (Views: 16.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2019-12-10 15:23:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started DELETE "/blog_posts/6" for 127.0.0.1 at 2019-12-10 15:23:35 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"id"=>"6"}
+Can't verify CSRF token authenticity.
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "blog_posts" WHERE "blog_posts"."id" = ?[0m  [["id", 6]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 10ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 15:23:35 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/5" for 127.0.0.1 at 2019-12-10 15:23:37 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2019-12-10 15:23:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started DELETE "/blog_posts/5" for 127.0.0.1 at 2019-12-10 15:23:38 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"id"=>"5"}
+Can't verify CSRF token authenticity.
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "blog_posts" WHERE "blog_posts"."id" = ?[0m  [["id", 5]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 14ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 15:23:38 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 13ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-10 15:23:47 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-10 15:23:54 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9FcZ7oF0h8XqS0NkkrSP6BjMv3Q7jpysYMKrhgftXo3TgZSevMwY6NDdhdSalcOwaLGCZiOEJZ0K//z5EftgnQ==", "blog_post"=>{"title"=>"kjkjk", "body"=>"aaaaaaaaaaaaaaaa"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "kjkjk"], ["body", "aaaaaaaaaaaaaaaa"], ["created_at", "2019-12-10 13:23:54.341378"], ["updated_at", "2019-12-10 13:23:54.341378"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+New blog post kjkjk
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 15ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 15:23:54 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/8" for 127.0.0.1 at 2019-12-10 15:23:59 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2019-12-10 15:23:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started DELETE "/blog_posts/8" for 127.0.0.1 at 2019-12-10 15:24:00 +0200
+Processing by BlogPostsController#destroy as HTML
+  Parameters: {"id"=>"8"}
+Can't verify CSRF token authenticity.
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "blog_posts" WHERE "blog_posts"."id" = ?[0m  [["id", 8]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 12ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 15:24:00 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 13ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2019-12-10 15:24:24 +0200
+Processing by BlogPostsController#new as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 33ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2019-12-10 15:24:30 +0200
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GcWVOMwxpXg02/fs/J9zkyAJAK1yQk1HI/xAu0cfN5g+ExhI8Yk6VQ5NMVz0vj/LUHQ9v2pI9HZJwRfEUQkJiA==", "blog_post"=>{"title"=>"333", "body"=>"999999l;;';"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "333"], ["body", "999999l;;';"], ["created_at", "2019-12-10 13:24:30.797225"], ["updated_at", "2019-12-10 13:24:30.797225"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+New blog post 333
+Redirected to http://localhost:3000/blog_posts
+Completed 302 Found in 13ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 15:24:30 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:24:48 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2019-12-10 15:24:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts" for 127.0.0.1 at 2019-12-10 15:24:50 +0200
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE BlogPost Load (0.0ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:24:50 +0200
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2019-12-10 15:24:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/blog_posts/7/edit" for 127.0.0.1 at 2019-12-10 15:24:52 +0200
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+DEPRECATION WARNING: The asset "application.css" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from block in singleton class at app/concepts/blog_post/view/layout.slim:4)
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2019-12-10 15:24:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/dell/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started PATCH "/blog_posts/7" for 127.0.0.1 at 2019-12-10 15:24:55 +0200
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cXxbwK9Aa1Ayy+FjHkOEELJ5R8iPRF7rRJaPD9eqpl8LxLk1JZb0PdbWHYYrMgS+c/rdRS9qBa7y57siRtbMRQ==", "blog_post"=>{"title"=>"kjkjk1", "body"=>"aaaaaaaaaaaaaaaa"}, "commit"=>"Save", "id"=>"7"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "blog_posts" SET "title" = ?, "updated_at" = ? WHERE "blog_posts"."id" = ?[0m  [["title", "kjkjk1"], ["updated_at", "2019-12-10 13:24:55.937512"], ["id", 7]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts.7
+Completed 302 Found in 21ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/blog_posts.7" for 127.0.0.1 at 2019-12-10 15:24:55 +0200
+Processing by BlogPostsController#index as 
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" ORDER BY "blog_posts"."updated_at" DESC[0m
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+

@@ -12,7 +12,7 @@ class BlogPostsController < ApplicationController
       return redirect_to blog_posts_path
     end
 
-    render cell(BlogPost::Cell::New, @form), layout: false
+    render cell(BlogPost::Cell::New, @form)
   end
 
   def index
@@ -24,13 +24,13 @@ class BlogPostsController < ApplicationController
   def show
     run BlogPost::Show
 
-    render cell(BlogPost::Cell::Show, result['model']), layout: false
+    render html: cell(BlogPost::Cell::Show, result['model'], layout: BlogPost::Cell::Layout)
   end
 
   def edit
     run BlogPost::Update::Present
 
-    render cell(BlogPost::Cell::Edit, @form), layout: false
+    render html: cell(BlogPost::Cell::Edit, @form, layout: BlogPost::Cell::Layout)
   end
 
   def update
@@ -39,7 +39,12 @@ class BlogPostsController < ApplicationController
       return redirect_to blog_posts_path(result['model'])
     end
 
-    flash[:notice] = "Error #{model.default}"
     render cell(BlogPost::Cell::Edit, @form), layout: false
+  end
+
+  def destroy
+    run BlogPost::Delete
+
+    redirect_to blog_posts_path
   end
 end
