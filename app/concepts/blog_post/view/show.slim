@@ -1,6 +1,12 @@
-= cell(BlogPost::Cell::Item, model)
-= edit_link
-p
-= delete_link
-p
-= home_link
+.post-preview
+  h2.post-title
+    = title
+  p.post-meta
+    = "Posted at #{created_at}"
+    p
+      = body
+  = edit_link
+  p
+  = delete_link
+  p
+  = home_link

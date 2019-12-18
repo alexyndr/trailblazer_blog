@@ -1,13 +1,8 @@
 .post-preview
   h2.post-title
-    - if current_page?(blog_post_path(model))
-      = title
-    - else
-      = title_link
+    = title_link
   p.post-meta
     = "Posted at #{created_at}"
     p
       = body
-- if current_page?(blog_posts_path)
-  - unless first
-    hr
+  hr

@@ -14,9 +14,5 @@ module BlogPost::Cell
     def created_at
       model.created_at.strftime("%d %B %Y")
     end
-
-    def first
-      model == BlogPost.first
-    end
   end
 end
