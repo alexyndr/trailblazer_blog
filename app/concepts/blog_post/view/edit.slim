@@ -1,0 +1,17 @@
+.row
+  h1 Edit Post
+
+  = simple_form_for model do |f|
+    .row
+      .col-sm-12
+        = f.input :title, placeholder: 'Title', label: false
+    .row
+      .col-sm-12
+        = f.input :body, placeholder: 'Body', label: false
+    .row
+      .col-sm-6
+        = f.submit 'Save'
+p
+  = delete_link
+p
+  = home_link

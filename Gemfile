@@ -14,6 +14,8 @@ gem "trailblazer-rails"
 gem "trailblazer-cells"
 gem "cells-rails"
 gem "cells-slim"
+gem "pry"
+gem 'jquery-rails'
 
 
 group :test do
